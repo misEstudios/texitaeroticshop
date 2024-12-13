@@ -1,0 +1,692 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: left;
+}
+
+/* 
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+>>>>>>> ENCABEZADO <<<<<<<
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+.encabezado {
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+.encabezado__navegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+}
+
+.encabezado__navegacion--auxilio {
+    display: flex;
+    justify-content: end;
+}
+
+.encabezado__navegacion__menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+}
+
+.encabezado__navegacion__menu__items {
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'TW Cen MT Condensed Extra Bold'; */
+    /* font-family: Impact; */
+    /* font-family: 'Haettenschweiler'; */
+    font-family: 'Eras Bold ITC';
+    /* font-family: 'Britannic Bold'; */
+    /* font-family: 'Arial Black'; */
+    font-size: .9rem;
+    color: black;
+}
+
+/* .encabezado__navegacion__menu__items--acaEstoy {
+    font-size: 1.1rem;
+} */
+
+.encabezado__navegacion__menu__items__linkPerfil {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado__navegacion__menu__items__linkPerfil__imagenPerfil {
+    align-self: center center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.encabezado__navegacion__logo {
+    font-size: 2rem;
+    background-color: black;
+    margin: 10px;
+    line-height: normal;
+    /* background-image: linear-gradient(100deg, rgba(231,0,0,1) 0%, rgba(255,140,0,1) 20%, rgba(255,239,0,1) 40%, rgba(0,129,31,1) 60%, rgba(0,68,255,1) 80%, rgba(118,0,137,1) 100%); */
+}
+
+.encabezado__navegacion__logo__textoLogo {
+    font-style: italic;
+    font-size: 2rem;
+    line-height: normal;
+    /* font-family: 'TW Cen MT Condensed Extra Bold'; */
+    /* font-family: Impact; */
+    /* font-family: 'Haettenschweiler'; */
+    /* font-family: 'Eras Bold ITC'; */
+    /* font-family: 'Britannic Bold'; */
+    font-family: 'Arial Black';
+    color: aliceblue;
+    padding-right: 20px;
+    /* background-image: linear-gradient(100deg, rgba(231,0,0,1) 0%, rgba(255,140,0,1) 20%, rgba(255,239,0,1) 40%, rgba(0,129,31,1) 60%, rgba(0,68,255,1) 80%, rgba(118,0,137,1) 100%); */
+}
+
+
+/* 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+        DISEÑO 
+>>>>>>> DE TODAS <<<<<<<
+        LAS PAGINAS
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-centrado {
+    margin-inline: auto;
+    padding-inline: 10%;
+    background-color: aliceblue;
+    padding-block: 80px;
+    max-width: 65%;
+    margin-bottom: 80px;
+}
+
+.imagen-fondo {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -2;
+    background-image: url(../img/imageBDSM.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 40%;
+}
+
+.difusor {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: #ffffffc7;
+    z-index: -1;
+}
+
+.tituloPrincipal {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.tituloPrincipal__texto {
+    color: black;
+    font-size: 2.5rem;
+    font-family: 'Eras Bold ITC';
+}
+
+
+/* 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+>>>>>>>    INICIO     <<<<<<<
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+.textoImagenInicio {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "textoPomelo imgPomelo"
+        "imgVulva textoVulva"
+    ;
+}
+
+.imgPomelo {
+    grid-area: "imgPomelo";
+    display: flex;
+    align-items: center;
+}
+
+.textoPomelo {
+    grid-area: "textoPomelo";
+}
+
+.imgVulva {
+    grid-area: "imgVulva";
+    display: flex;
+    align-items: center;
+}
+
+.textoVulva {
+    grid-area: "textoVulva";
+}
+
+.contenedor-carousel {
+    /* margin-inline: auto;
+    padding-inline: 10%; */
+    background-color: aliceblue;
+    /* padding-block: 80px; */
+    max-width: 65%;
+    /* margin-bottom: 80px; */
+    margin-top: 60px;
+}
+
+.contenedorInicio {
+    
+    max-width: 65%;
+    margin-bottom: 50vh;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contenedorLogoCentro {
+    margin-block: 10px;
+    margin-top: 10vh;
+}
+
+.logoCentro {
+    display: inline;
+    font-size: 7rem;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    line-height: normal;
+}
+
+.logoCentro__texto {
+    
+    font-style: italic;
+    font-size: 7rem;
+    line-height: normal;
+    font-family: 'Arial Black';
+    color: aliceblue;
+    padding-right: 20px;
+}
+
+.refuerzoLogo {
+    font-family: 'Edwardian Script ITC';
+    font-size: 7rem;
+    color: black;
+    text-align: end;
+    transform: rotate(355deg);
+}
+
+.imgInicio {
+    width: 100%;
+}
+
+.subtitulosInicio {
+    color: red;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.textoInicio {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.arreglitoEntreLineasInicio {
+    margin-top: 2rem;
+}
+
+/* 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+>>>>>>> QUIENES SOMOS <<<<<<<
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+
+.quienesSomos__texto {
+    color: #787878;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: justify;
+    margin-bottom: 70px;
+    font-family: 'Eras ITC';
+}
+
+
+/* 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+>>>>>>> PIE DE PÁGINA <<<<<<<
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 2rem;
+    color: #fff;
+    /* position: relative; */
+    /* bottom: 0; */
+    width: 100%;
+    /* height: 100px; */
+    /* padding-bottom: 16px; */
+    background: #111;
+    background: rgba(0,0,0,.90);
+    /* z-index:2000; */
+}
+
+.footer__rrss {
+    color: #787878;
+    display: flex;
+    gap: 1rem;
+    margin-top: 30px;
+}
+
+.footer__rrss__icon {
+    cursor: pointer;
+}
+
+.footer__text {  
+    color: #787878;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: justify;
+    font-family: 'Eras ITC';
+}
+
+
+/* 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+        CONTACTO 
+    >>>>>>> Y <<<<<<<
+        LOG IN 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+.contacto {
+    display: flex;
+    gap: 2rem;
+}
+ 
+.contacto__form__cajitas {
+    height: 42px;
+    border: 1px solid #ebebeb;
+    background-color: transparent;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    margin-bottom: 1rem;
+    font-family: "Eras ITC";
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    /* background-color: #fff; */
+    background-clip: padding-box;
+    /* border: 1px solid #ced4da; */
+    /* border-radius: .25rem; */
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.contacto__form__textInformativo {
+    letter-spacing: 1px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Eras Bold ITC';
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.contacto__form__cajaConsulta {
+    color: #495057;
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    border: 1px solid #ebebeb;
+    background-color: transparent;
+    resize: vertical;
+    overflow: auto;
+    font-family: "Eras ITC";
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+
+.contacto__mapa {
+    width: 100%;
+}
+
+.contacto__form__boton {
+    font-family: 'Eras Bold ITC';
+    background-color: #fa3319;
+    margin-block: 19px;
+    display: inline-block;
+    min-width: 170px;
+    height: 50px;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    padding: 0 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 50px;
+    letter-spacing: 1.5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.contenedorOlvideMiContrasenaYCrearUsuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.contenedorOlvideMiContrasenaYCrearUsuario__textoLink {
+    text-decoration: none;
+    font-family: "Eras Bold ITC";
+    color: #444;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+/* 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+>>>>>>>   PRODUCTOS   <<<<<<<
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+
+.productos {
+    font-family: "Eras ITC";
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+}
+
+.productos__producto {
+    background-color: white;
+}
+
+.productos__producto__texto__precio {
+    color: black;
+    font-size: 1rem;
+}
+
+.productos__producto__boton {
+    font-family: "Eras ITC";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5px;
+    background-color: #fa3319;
+    color: white;
+    font-weight: 600;
+    padding: .5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.productos__producto__texto {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 1rem;
+}
+
+.productos__producto__imagen {
+    width: 100%;
+}
+
+.productos__producto__texto__descripcion {
+    color: #787878;
+    font-size: .9rem;
+}
+
+.productos__producto__texto__nombre {
+    font-size: 1rem;
+    height: 2rem;  
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.producto1 {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.producto2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.producto3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.producto4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.producto5 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.producto6 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.producto7 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.producto8 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.producto9 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+.producto10 {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+
+@media (max-width: 980px) {
+
+    .contenedor-centrado {
+        margin-inline: auto;
+        padding-inline: 10%;
+        background-color: aliceblue;
+        padding-block: 80px;
+        max-width: 80%;
+        margin-bottom: 80px;
+    }   
+
+        
+    .contenedorInicio {
+        
+        max-width: 80%;
+        margin-bottom: 50vh;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    
+    .logoCentro {
+        display: inline;
+        font-size: 5rem;
+        background-color: black;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        line-height: normal;
+    }
+
+        
+    .logoCentro__texto {
+        
+        font-style: italic;
+        font-size: 5rem;
+        line-height: normal;
+        font-family: 'Arial Black';
+        color: aliceblue;
+        padding-right: 20px;
+    }
+
+    .refuerzoLogo {
+        font-family: 'Edwardian Script ITC';
+        font-size: 5rem;
+        color: black;
+        text-align: end;
+        transform: rotate(355deg);
+    }
+
+
+}
+
+@media (max-width: 680px) {
+    
+    .contenedor-centrado {
+        margin-inline: auto;
+        padding-inline: 10%;
+        background-color: aliceblue;
+        padding-block: 80px;
+        max-width: 100%;
+        margin-bottom: 80px;
+    }   
+
+        
+    .contenedorInicio {
+        
+        max-width: 100%;
+        margin-bottom: 50vh;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    
+    .logoCentro {
+        display: inline;
+        font-size: 3rem;
+        background-color: black;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        line-height: normal;
+    }
+
+        
+    .logoCentro__texto {
+        
+        font-style: italic;
+        font-size: 3rem;
+        line-height: normal;
+        font-family: 'Arial Black';
+        color: aliceblue;
+        padding-right: 20px;
+    }
+
+    .refuerzoLogo {
+        font-family: 'Edwardian Script ITC';
+        font-size: 3rem;
+        color: black;
+        text-align: end;
+        transform: rotate(355deg);
+        padding-right: 20%;
+    }
+
+    .textoImagenInicio {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .imgVulva {
+        order: 2;
+    }
+
+    .productos {
+        font-family: "Eras ITC";
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+     
+    
+}
